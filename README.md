@@ -1,8 +1,8 @@
 # Implementation of Sample Kubeflow Central Dashboard
 
-This project was built with TypeScript, Material-ui and React.Js.
+This project was built with TypeScript, Material-UI and React.Js.
 
-To access components and assets files, visit the public directory inside the src directory
+To access components and assets folders, visit the public directory inside the src directory
 
 ## Available Scripts
 
