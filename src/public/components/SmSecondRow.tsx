@@ -51,7 +51,7 @@ export default function SmSecondRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "121%",
+              width: "115%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}

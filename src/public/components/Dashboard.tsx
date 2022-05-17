@@ -140,7 +140,7 @@ export default function Dashboard(props: DashboardProps) {
         <Toolbar>
           <Typography
             sx={{
-              marginLeft: "-34px",
+              marginLeft: "-21px",
               zIndex: "1",
               position: "absolute",
               display: { sm: "none" },
@@ -156,7 +156,7 @@ export default function Dashboard(props: DashboardProps) {
               alt="Kubeflow logo"
               style={{
                 marginTop: "-13px",
-                marginLeft: "35px",
+                marginLeft: "55px",
                 width: "8%",
                 position: "fixed",
               }}
@@ -165,7 +165,7 @@ export default function Dashboard(props: DashboardProps) {
               style={{
                 color: "#213d7a",
                 fontWeight: 600,
-                marginLeft: "70px",
+                marginLeft: "90px",
                 position: "absolute",
                 marginTop: "-10px",
               }}
@@ -214,7 +214,7 @@ export default function Dashboard(props: DashboardProps) {
                 color: "gray",
                 marginRight: "3px",
                 marginTop: "-2px",
-                marginLeft: "10px",
+                marginLeft: "30px",
                 position: "absolute",
                 cursor: "pointer",
               }}
@@ -229,7 +229,7 @@ export default function Dashboard(props: DashboardProps) {
                 fontSize: "0.8rem",
                 color: "black",
                 cursor: "pointer",
-                marginLeft: "38px",
+                marginLeft: "58px",
               }}
             >
               No Namespaces
@@ -324,7 +324,7 @@ export default function Dashboard(props: DashboardProps) {
         }}
         style={{
           backgroundColor: "#F5F5F5",
-          height: "89vh",
+          height: "91vh",
           width: "100%",
           position: "fixed",
           marginLeft: "-8px",

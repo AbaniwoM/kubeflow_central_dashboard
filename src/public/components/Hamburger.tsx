@@ -165,7 +165,7 @@ export const Hamburger = () => {
                         style={{
                           color: "#B0C4DE",
                           fontSize: "0.9rem",
-                          marginTop: "205px",
+                          marginTop: "405px",
                           marginLeft: "23px",
                         }}
                       >

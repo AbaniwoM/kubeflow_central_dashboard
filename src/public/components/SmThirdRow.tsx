@@ -88,7 +88,7 @@ export default function SmThirdRow() {
             backgroundColor: "white",
             borderRadius: "4px",
             height: "5vh",
-            width: "67%",
+            width: "72%",
             padding: "23px",
             marginLeft: "0px",
             marginTop: "19px",
@@ -111,7 +111,7 @@ export default function SmThirdRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "121%",
+              width: "124%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}

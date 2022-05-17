@@ -47,7 +47,7 @@ export default function SmFirstRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "121%",
+              width: "116%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}
@@ -60,7 +60,7 @@ export default function SmFirstRow() {
             backgroundColor: "white",
             borderRadius: "4px",
             height: "10vh",
-            width: "68%",
+            width: "73%",
             padding: "23px",
             marginLeft: "45px",
           }}
@@ -80,7 +80,7 @@ export default function SmFirstRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "121%",
+              width: "124%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}
@@ -104,7 +104,7 @@ export default function SmFirstRow() {
             backgroundColor: "white",
             borderRadius: "4px",
             height: "5vh",
-            width: "68%",
+            width: "73%",
             padding: "23px",
             marginLeft: "45px",
           }}
@@ -124,7 +124,7 @@ export default function SmFirstRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "120%",
+              width: "123%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}
