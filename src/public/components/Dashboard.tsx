@@ -214,7 +214,7 @@ export default function Dashboard(props: DashboardProps) {
                 color: "gray",
                 marginRight: "3px",
                 marginTop: "-2px",
-                marginLeft: "30px",
+                marginLeft: "38px",
                 position: "absolute",
                 cursor: "pointer",
               }}
@@ -229,7 +229,7 @@ export default function Dashboard(props: DashboardProps) {
                 fontSize: "0.8rem",
                 color: "black",
                 cursor: "pointer",
-                marginLeft: "58px",
+                marginLeft: "69px",
               }}
             >
               No Namespaces

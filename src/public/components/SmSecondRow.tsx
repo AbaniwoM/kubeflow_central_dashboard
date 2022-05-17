@@ -43,7 +43,7 @@ export default function SmSecondRow() {
               fontSize: "15px",
               width: "80%",
               marginTop: "-4px",
-              marginLeft: "-30px",
+              marginLeft: "-55px",
             }}
           >
             Recent Pipelines
@@ -51,7 +51,7 @@ export default function SmSecondRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "115%",
+              width: "117%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}

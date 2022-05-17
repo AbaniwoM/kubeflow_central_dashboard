@@ -39,7 +39,7 @@ export default function SmFirstRow() {
               fontSize: "15px",
               width: "80%",
               marginTop: "-4px",
-              marginLeft: "-35px",
+              marginLeft: "-50px",
             }}
           >
             Quick shortcuts
@@ -72,7 +72,7 @@ export default function SmFirstRow() {
               fontSize: "15px",
               width: "80%",
               marginTop: "-4px",
-              marginLeft: "-25px",
+              marginLeft: "-50px",
             }}
           >
             Recent Notebooks
@@ -80,7 +80,7 @@ export default function SmFirstRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "124%",
+              width: "115%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}
@@ -116,7 +116,7 @@ export default function SmFirstRow() {
               fontSize: "15px",
               width: "80%",
               marginTop: "-4px",
-              marginLeft: "-36px",
+              marginLeft: "-61px",
             }}
           >
             Documentation
@@ -124,7 +124,7 @@ export default function SmFirstRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "123%",
+              width: "114%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}
