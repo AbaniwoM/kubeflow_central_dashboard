@@ -88,9 +88,9 @@ export default function ThirdRow() {
             backgroundColor: "white",
             borderRadius: "4px",
             height: "5vh",
-            width: "102%",
+            width: "81%",
             padding: "23px",
-            marginLeft: "358px",
+            marginLeft: "398px",
           }}
           className={classes.frm}
         >

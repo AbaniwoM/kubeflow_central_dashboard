@@ -2,7 +2,7 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
-import { Typography, makeStyles } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -12,66 +12,8 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const useStyles = makeStyles((theme) => ({
-  custom: {
-    "&:hover": {
-      color: "white",
-      cursor: "pointer",
-    },
-  },
-  pip: {
-    [theme.breakpoints.down("sm")]: {
-      marginLeft: "-100px",
-      marginTop: "20px",
-      width: "113%",
-    },
-  },
-  nes: {
-    [theme.breakpoints.down("sm")]: {
-      marginLeft: "-100px",
-      position: "relative",
-      width: "101%",
-    },
-  },
-  mul: {
-    [theme.breakpoints.down("sm")]: {
-      width: "90%",
-      marginLeft: "0px",
-      marginTop: "20px",
-    },
-  },
-  frm: {
-    width: "71%",
-    marginLeft: "19px",
-  },
-  wrk: {
-    [theme.breakpoints.down("sm")]: {
-      paddingLeft: "-70px",
-      position: "relative",
-    },
-  },
-  com: {
-    [theme.breakpoints.down("sm")]: {
-      width: "79%",
-      marginLeft: "19px",
-    },
-  },
-  comcn: {
-    [theme.breakpoints.down("sm")]: {
-      width: "71%",
-      marginLeft: "19px",
-    },
-  },
-  nity: {
-    [theme.breakpoints.down("sm")]: {
-      paddingLeft: "-70px",
-      position: "relative",
-    },
-  },
-}));
 
-export default function SecondRow() {
-  const classes = useStyles();
+export default function SmSecondRow() {
   return (
     <Grid
       container
@@ -88,11 +30,11 @@ export default function SecondRow() {
             backgroundColor: "white",
             borderRadius: "4px",
             height: "5vh",
-            width: "81%",
+            width: "108%",
             padding: "23px",
-            marginLeft: "278px",
+            marginLeft: "-120px",
+            marginTop: "18px",
           }}
-          className={classes.nes}
         >
           <Typography
             style={{
@@ -101,7 +43,7 @@ export default function SecondRow() {
               fontSize: "15px",
               width: "80%",
               marginTop: "-4px",
-              marginLeft: "-60px",
+              marginLeft: "-30px",
             }}
           >
             Recent Pipelines
@@ -109,7 +51,7 @@ export default function SecondRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "116%",
+              width: "121%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}

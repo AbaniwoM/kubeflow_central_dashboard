@@ -2,7 +2,7 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
-import { Typography, makeStyles } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -12,83 +12,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const useStyles = makeStyles((theme) => ({
-  custom: {
-    "&:hover": {
-      color: "white",
-      cursor: "pointer",
-    },
-  },
-  note: {
-    [theme.breakpoints.down("sm")]: {
-      marginLeft: "-100px",
-      width: "115%",
-    },
-  },
-  notetext: {
-    [theme.breakpoints.down("sm")]: {
-      marginLeft: "-100px",
-      width: "104%",
-      height: "78vh",
-    },
-  },
-  ten: {
-    [theme.breakpoints.down("sm")]: {
-      width: "78%",
-      marginTop: "20px",
-      marginLeft: "20px",
-    },
-  },
-  tentext: {
-    [theme.breakpoints.down("sm")]: {
-      width: "71%",
-      marginLeft: "20px",
-    },
-  },
-  training: {
-    [theme.breakpoints.down("sm")]: {
-      width: "60%",
-      paddingLeft: "13px",
-      textAlign: "center",
-      position: "relative",
-    },
-  },
-  provide: {
-    [theme.breakpoints.down("sm")]: {
-      paddingTop: "-15px",
-      position: "relative",
-    },
-  },
-  del: {
-    [theme.breakpoints.down("sm")]: {
-      width: "20%",
-      position: "relative",
-    },
-  },
-  sor: {
-    [theme.breakpoints.down("sm")]: {
-      width: "90%",
-      marginLeft: "0px",
-      marginTop: "20px",
-    },
-  },
-  ser: {
-    [theme.breakpoints.down("sm")]: {
-      paddingLeft: "-70px",
-      position: "relative",
-    },
-  },
-  tom: {
-    [theme.breakpoints.down("sm")]: {
-      width: "5%",
-      position: "relative",
-      textAlign: "center",
-    },
-  },
-}));
-
-export default function FirstRow() {
-  const classes = useStyles();
+export default function SmFirstRow() {
   return (
     <Grid
       container
@@ -102,11 +26,11 @@ export default function FirstRow() {
             backgroundColor: "white",
             borderRadius: "4px",
             height: "5vh",
-            width: "75%",
+            width: "108%",
             padding: "23px",
-            marginLeft: "2px",
+            marginTop: "8px",
+            marginLeft: "-74px",
           }}
-          className={classes.notetext}
         >
           <Typography
             style={{
@@ -115,7 +39,7 @@ export default function FirstRow() {
               fontSize: "15px",
               width: "80%",
               marginTop: "-4px",
-              marginLeft: "-50px",
+              marginLeft: "-35px",
             }}
           >
             Quick shortcuts
@@ -123,7 +47,7 @@ export default function FirstRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "117%",
+              width: "121%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}
@@ -136,11 +60,10 @@ export default function FirstRow() {
             backgroundColor: "white",
             borderRadius: "4px",
             height: "10vh",
-            width: "81%",
+            width: "68%",
             padding: "23px",
-            marginLeft: "-58px",
+            marginLeft: "45px",
           }}
-          className={classes.tentext}
         >
           <Typography
             style={{
@@ -149,21 +72,28 @@ export default function FirstRow() {
               fontSize: "15px",
               width: "80%",
               marginTop: "-4px",
-              marginLeft: "-50px",
+              marginLeft: "-25px",
             }}
-            className={classes.training}
           >
             Recent Notebooks
           </Typography>
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "116%",
+              width: "121%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}
           ></Typography>
-          <Typography style={{ color: "#999999", width: "100%", fontSize: "0.9rem", marginTop: "5px", marginLeft: "-15px" }}>
+          <Typography
+            style={{
+              color: "#999999",
+              width: "100%",
+              fontSize: "0.7rem",
+              marginTop: "5px",
+              marginLeft: "-15px",
+            }}
+          >
             <i>Choose a namespace to see Notebooks</i>
           </Typography>
         </Item>
@@ -174,11 +104,10 @@ export default function FirstRow() {
             backgroundColor: "white",
             borderRadius: "4px",
             height: "5vh",
-            width: "78%",
+            width: "68%",
             padding: "23px",
-            marginLeft: "-98px",
+            marginLeft: "45px",
           }}
-          className={classes.del}
         >
           <Typography
             style={{
@@ -187,16 +116,15 @@ export default function FirstRow() {
               fontSize: "15px",
               width: "80%",
               marginTop: "-4px",
-              marginLeft: "-60px",
+              marginLeft: "-36px",
             }}
-            className={classes.ser}
           >
             Documentation
           </Typography>
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "116%",
+              width: "120%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}

@@ -14,6 +14,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import logo from "../assets/logo.svg";
+import smlogo from "../assets/favicon-32x32.png";
 import LayersIcon from "@mui/icons-material/Layers";
 import { makeStyles } from "@material-ui/core";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
@@ -21,6 +22,10 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import FirstRow from "./FirstRow";
 import SecondRow from "./SecondRow";
 import ThirdRow from "./ThirdRow";
+import SmallFirstRow from "./SmFirstRow";
+import SmallSecondRow from "./SmSecondRow";
+import SmallThirdRow from "./SmThirdRow";
+import { Hamburger } from "./Hamburger";
 
 const drawerWidth = 240;
 
@@ -133,6 +138,41 @@ export default function Dashboard(props: DashboardProps) {
         }}
       >
         <Toolbar>
+          <Typography
+            sx={{
+              marginLeft: "-34px",
+              zIndex: "1",
+              position: "absolute",
+              display: { sm: "none" },
+            }}
+          >
+            <Hamburger />
+          </Typography>
+          <Typography
+            sx={{ mr: 2, position: "absolute", display: { sm: "none" } }}
+          >
+            <img
+              src={smlogo}
+              alt="Kubeflow logo"
+              style={{
+                marginTop: "-13px",
+                marginLeft: "35px",
+                width: "8%",
+                position: "fixed",
+              }}
+            />
+            <Typography
+              style={{
+                color: "#213d7a",
+                fontWeight: 600,
+                marginLeft: "70px",
+                position: "absolute",
+                marginTop: "-10px",
+              }}
+            >
+              Kubeflow
+            </Typography>
+          </Typography>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -145,8 +185,10 @@ export default function Dashboard(props: DashboardProps) {
               color: "gray",
               marginRight: "5px",
               marginLeft: "10px",
+              position: "absolute",
               cursor: "pointer",
             }}
+            sx={{ display: { xs: "none", sm: "block" } }}
           >
             <LayersIcon />
           </Typography>
@@ -154,12 +196,52 @@ export default function Dashboard(props: DashboardProps) {
             variant="h6"
             noWrap
             component="div"
-            style={{ fontSize: "0.9rem", color: "black", cursor: "pointer" }}
+            style={{
+              fontSize: "0.9rem",
+              color: "black",
+              cursor: "pointer",
+              marginLeft: "44px",
+            }}
           >
             No Namespaces
           </Typography>
           <Typography
-            style={{ color: "gray", marginLeft: "5px", cursor: "pointer" }}
+            style={{ marginLeft: "80px" }}
+            sx={{ display: { sm: "none" } }}
+          >
+            <Typography
+              style={{
+                color: "gray",
+                marginRight: "3px",
+                marginTop: "-2px",
+                marginLeft: "10px",
+                position: "absolute",
+                cursor: "pointer",
+              }}
+            >
+              <LayersIcon />
+            </Typography>
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              style={{
+                fontSize: "0.8rem",
+                color: "black",
+                cursor: "pointer",
+                marginLeft: "38px",
+              }}
+            >
+              No Namespaces
+            </Typography>
+          </Typography>
+          <Typography
+            style={{
+              color: "gray",
+              marginLeft: "-1px",
+              marginTop: "3px",
+              cursor: "pointer",
+            }}
           >
             <ArrowDropDownIcon />
           </Typography>
@@ -174,6 +256,7 @@ export default function Dashboard(props: DashboardProps) {
         component="nav"
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
         aria-label="mailbox folders"
+        style={{ position: "absolute" }}
       >
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Drawer
@@ -214,13 +297,43 @@ export default function Dashboard(props: DashboardProps) {
           flexGrow: 1,
           p: 3,
           width: { sm: `calc(100% - ${drawerWidth}px)` },
+          display: { xs: "none", sm: "block" },
         }}
-        style={{ backgroundColor: "#F5F5F5", height: "89vh", width: "100%" }}
+        style={{
+          backgroundColor: "#F5F5F5",
+          height: "89vh",
+          width: "100%",
+          position: "fixed",
+          marginLeft: "190px",
+        }}
       >
         <Toolbar />
         <FirstRow />
         <SecondRow />
         <ThirdRow />
+      </Box>
+      <Box
+        component="main"
+        sx={{
+          flexGrow: 1,
+          p: 3,
+          width: { sm: `calc(100% - ${drawerWidth}px)` },
+          display: { sm: "none" },
+          overflowY: { xs: "scroll" },
+          overflowX: { xs: "hidden" },
+        }}
+        style={{
+          backgroundColor: "#F5F5F5",
+          height: "89vh",
+          width: "100%",
+          position: "fixed",
+          marginLeft: "-8px",
+        }}
+      >
+        <Toolbar />
+        <SmallFirstRow />
+        <SmallSecondRow />
+        <SmallThirdRow />
       </Box>
     </Box>
   );

@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SecondRow() {
+export default function SmThirdRow() {
   const classes = useStyles();
   return (
     <Grid
@@ -82,17 +82,18 @@ export default function SecondRow() {
         marginLeft: "-13px",
       }}
     >
-      <Grid item xs={2} sm={4} md={3} style={{ marginLeft: "120px" }}>
+      <Grid item xs={2} sm={4} md={3}>
         <Item
           style={{
             backgroundColor: "white",
             borderRadius: "4px",
             height: "5vh",
-            width: "81%",
+            width: "67%",
             padding: "23px",
-            marginLeft: "278px",
+            marginLeft: "0px",
+            marginTop: "19px",
           }}
-          className={classes.nes}
+          className={classes.frm}
         >
           <Typography
             style={{
@@ -101,15 +102,16 @@ export default function SecondRow() {
               fontSize: "15px",
               width: "80%",
               marginTop: "-4px",
-              marginLeft: "-60px",
+              marginLeft: "-13px",
             }}
+            className={classes.wrk}
           >
-            Recent Pipelines
+            Recent Pipeline Runs
           </Typography>
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "116%",
+              width: "121%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}
