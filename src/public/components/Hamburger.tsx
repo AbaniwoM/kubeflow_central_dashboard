@@ -14,6 +14,7 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuList from "@mui/material/MenuList";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import Stack from "@mui/material/Stack";
+import LogoutIcon from "@mui/icons-material/Logout";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Typography } from "@material-ui/core";
 
@@ -118,7 +119,9 @@ export const Hamburger = () => {
                             <ListItemButton
                               style={{ marginBottom: "2px solid white" }}
                             >
-                              <ListItemIcon style={{ color: "white", marginLeft: "4px" }}>
+                              <ListItemIcon
+                                style={{ color: "white", marginLeft: "4px" }}
+                              >
                                 {index % 2 === 0 ? <HomeIcon /> : <MailIcon />}
                               </ListItemIcon>
                               <ListItemText
@@ -142,7 +145,11 @@ export const Hamburger = () => {
                             <ListItemButton>
                               <ListItemText
                                 primary={text}
-                                style={{ color: "#B0C4DE", marginLeft: "6px", position: "absolute" }}
+                                style={{
+                                  color: "#B0C4DE",
+                                  marginLeft: "6px",
+                                  position: "absolute",
+                                }}
                               />
                               <ListItemIcon
                                 style={{
@@ -161,6 +168,16 @@ export const Hamburger = () => {
                           </ListItem>
                         ))}
                       </List>
+                      <Typography
+                        style={{ display: "flex", marginLeft: "22px" }}
+                      >
+                        <Typography style={{ color: "#B0C4DE" }}>
+                          Logout
+                        </Typography>
+                        <Typography style={{ marginLeft: "90px" }}>
+                          <LogoutIcon />
+                        </Typography>
+                      </Typography>
                       <Typography
                         style={{
                           color: "#B0C4DE",

@@ -28,7 +28,7 @@ export default function SmFirstRow() {
             height: "5vh",
             width: "108%",
             padding: "23px",
-            marginTop: "8px",
+            marginTop: "20px",
             marginLeft: "-74px",
           }}
         >
@@ -39,7 +39,7 @@ export default function SmFirstRow() {
               fontSize: "15px",
               width: "80%",
               marginTop: "-4px",
-              marginLeft: "-50px",
+              marginLeft: "-65px",
             }}
           >
             Quick shortcuts
@@ -80,7 +80,7 @@ export default function SmFirstRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "115%",
+              width: "117%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}
@@ -91,7 +91,7 @@ export default function SmFirstRow() {
               width: "100%",
               fontSize: "0.7rem",
               marginTop: "5px",
-              marginLeft: "-15px",
+              marginLeft: "-40px",
             }}
           >
             <i>Choose a namespace to see Notebooks</i>
@@ -124,7 +124,7 @@ export default function SmFirstRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "114%",
+              width: "116%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}
