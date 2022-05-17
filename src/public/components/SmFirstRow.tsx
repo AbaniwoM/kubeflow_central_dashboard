@@ -39,7 +39,7 @@ export default function SmFirstRow() {
               fontSize: "15px",
               width: "80%",
               marginTop: "-4px",
-              marginLeft: "-65px",
+              marginLeft: "-62px",
             }}
           >
             Quick shortcuts
@@ -47,7 +47,7 @@ export default function SmFirstRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "116%",
+              width: "117%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}
@@ -91,7 +91,7 @@ export default function SmFirstRow() {
               width: "100%",
               fontSize: "0.7rem",
               marginTop: "5px",
-              marginLeft: "-40px",
+              marginLeft: "-43px",
             }}
           >
             <i>Choose a namespace to see Notebooks</i>
@@ -114,7 +114,7 @@ export default function SmFirstRow() {
               color: "#645B61",
               fontWeight: "600",
               fontSize: "15px",
-              width: "80%",
+              width: "81%",
               marginTop: "-4px",
               marginLeft: "-61px",
             }}

@@ -111,7 +111,7 @@ export default function SmThirdRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "116%",
+              width: "117%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}
