@@ -26,7 +26,7 @@ export default function SmFirstRow() {
             backgroundColor: "white",
             borderRadius: "4px",
             height: "5vh",
-            width: "108%",
+            width: "107%",
             padding: "23px",
             marginTop: "20px",
             marginLeft: "-74px",
@@ -91,7 +91,7 @@ export default function SmFirstRow() {
               width: "100%",
               fontSize: "0.7rem",
               marginTop: "5px",
-              marginLeft: "-43px",
+              marginLeft: "-45px",
             }}
           >
             <i>Choose a namespace to see Notebooks</i>
@@ -124,7 +124,7 @@ export default function SmFirstRow() {
           <Typography
             style={{
               borderBottom: "1px solid #D3D3D3",
-              width: "116%",
+              width: "117%",
               marginLeft: "-23px",
               marginTop: "18px",
             }}
