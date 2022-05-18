@@ -16,12 +16,14 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import Stack from "@mui/material/Stack";
 import LogoutIcon from "@mui/icons-material/Logout";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Typography } from "@material-ui/core";
+import { Typography, Link } from "@material-ui/core";
+import { useNavigate } from "react-router-dom";
 
 
 export const Hamburger = () => {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef<HTMLButtonElement>(null);
+  const navigate = useNavigate();
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
@@ -113,25 +115,34 @@ export const Hamburger = () => {
                     <div
                       style={{ backgroundColor: "#213d7a", height: "100vh" }}
                     >
-                      <List>
-                        {["Home"].map((text, index) => (
-                          <ListItem key={text} disablePadding>
-                            <ListItemButton
-                              style={{ marginBottom: "2px solid white" }}
-                            >
-                              <ListItemIcon
-                                style={{ color: "white", marginLeft: "4px" }}
+                      <Button onClick={() => navigate("/dashboard/")}>
+                        <List>
+                          {["Home"].map((text, index) => (
+                            <ListItem key={text} disablePadding>
+                              <ListItemButton
+                                style={{ marginBottom: "2px solid white" }}
                               >
-                                {index % 2 === 0 ? <HomeIcon /> : <MailIcon />}
-                              </ListItemIcon>
-                              <ListItemText
-                                primary={text}
-                                style={{ color: "white", marginLeft: "-12px" }}
-                              />
-                            </ListItemButton>
-                          </ListItem>
-                        ))}
-                      </List>
+                                <ListItemIcon
+                                  style={{ color: "white", marginLeft: "4px" }}
+                                >
+                                  {index % 2 === 0 ? (
+                                    <HomeIcon />
+                                  ) : (
+                                    <MailIcon />
+                                  )}
+                                </ListItemIcon>
+                                <ListItemText
+                                  primary={text}
+                                  style={{
+                                    color: "white",
+                                    marginLeft: "-12px",
+                                  }}
+                                />
+                              </ListItemButton>
+                            </ListItem>
+                          ))}
+                        </List>
+                      </Button>
                       <Typography
                         style={{
                           borderBottom: "1px solid white",
@@ -139,42 +150,63 @@ export const Hamburger = () => {
                           marginLeft: "22px",
                         }}
                       ></Typography>
-                      <List>
-                        {["GitHub", "Documentation"].map((text, index) => (
-                          <ListItem key={text} disablePadding>
+                      <Link
+                        href="https://github.com/kubeflow/kubeflow"
+                        underline="none"
+                      >
+                        <List style={{ marginTop: "10px" }}>
+                          <ListItem disablePadding>
                             <ListItemButton>
-                              <ListItemText
-                                primary={text}
-                                style={{
-                                  color: "#B0C4DE",
-                                  marginLeft: "6px",
-                                  position: "absolute",
-                                }}
-                              />
+                              <Typography
+                                style={{ color: "#B0C4DE", marginLeft: "5px" }}
+                              >
+                                GitHub
+                              </Typography>
                               <ListItemIcon
                                 style={{
                                   color: "white",
-                                  fontSize: 1,
-                                  marginLeft: "145px",
+                                  fontSize: "0.1rem",
+                                  marginLeft: "69px",
                                 }}
                               >
-                                {index % 2 === 0 ? (
-                                  <OpenInNewIcon />
-                                ) : (
-                                  <OpenInNewIcon />
-                                )}
+                                <OpenInNewIcon />
                               </ListItemIcon>
                             </ListItemButton>
                           </ListItem>
-                        ))}
-                      </List>
+                        </List>
+                      </Link>
+                      <Link
+                        href="https://www.kubeflow.org/docs/started/introduction/"
+                        underline="none"
+                      >
+                        <List style={{ marginTop: "-8px" }}>
+                          <ListItem disablePadding>
+                            <ListItemButton>
+                              <Typography
+                                style={{ color: "#B0C4DE", marginLeft: "5px" }}
+                              >
+                                Documentation
+                              </Typography>
+                              <ListItemIcon
+                                style={{
+                                  color: "white",
+                                  fontSize: "0.1rem",
+                                  marginLeft: "10px",
+                                }}
+                              >
+                                <OpenInNewIcon />
+                              </ListItemIcon>
+                            </ListItemButton>
+                          </ListItem>
+                        </List>
+                      </Link>
                       <Typography
                         style={{ display: "flex", marginLeft: "22px" }}
                       >
                         <Typography style={{ color: "#B0C4DE" }}>
                           Logout
                         </Typography>
-                        <Typography style={{ marginLeft: "90px" }}>
+                        <Typography style={{ marginLeft: "70px" }}>
                           <LogoutIcon />
                         </Typography>
                       </Typography>

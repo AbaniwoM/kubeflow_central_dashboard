@@ -16,7 +16,7 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import logo from "../assets/logo.svg";
 import smlogo from "../assets/favicon-32x32.png";
 import LayersIcon from "@mui/icons-material/Layers";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Link, Button } from "@material-ui/core";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import LogoutIcon from "@mui/icons-material/Logout";
 import FirstRow from "./FirstRow";
@@ -90,21 +90,49 @@ export default function Dashboard(props: DashboardProps) {
           marginLeft: "11px",
         }}
       ></Typography>
-      <List>
-        {["GitHub", "Documentation"].map((text, index) => (
-          <ListItem key={text} disablePadding>
+      <Link href="https://github.com/kubeflow/kubeflow" underline="none">
+        <List style={{ marginTop: "15px" }}>
+          <ListItem disablePadding>
             <ListItemButton>
-              <ListItemText primary={text} style={{ color: "#B0C4DE" }} />
+              <Typography style={{ color: "#B0C4DE" }}>GitHub</Typography>
               <ListItemIcon
-                style={{ color: "white", fontSize: 2, marginLeft: "-30px" }}
+                style={{
+                  color: "white",
+                  fontSize: "0.1rem",
+                  marginLeft: "69px",
+                }}
                 className={classes.icon}
               >
-                {index % 2 === 0 ? <OpenInNewIcon /> : <OpenInNewIcon />}
+                <OpenInNewIcon />
               </ListItemIcon>
             </ListItemButton>
           </ListItem>
-        ))}
-      </List>
+        </List>
+      </Link>
+      <Link
+        href="https://www.kubeflow.org/docs/started/introduction/"
+        underline="none"
+      >
+        <List style={{ marginTop: "-5px" }}>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <Typography style={{ color: "#B0C4DE" }}>
+                Documentation
+              </Typography>
+              <ListItemIcon
+                style={{
+                  color: "white",
+                  fontSize: "0.1rem",
+                  marginLeft: "10px",
+                }}
+                className={classes.icon}
+              >
+                <OpenInNewIcon />
+              </ListItemIcon>
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </Link>
       <Typography
         style={{
           color: "#B0C4DE",
@@ -180,44 +208,16 @@ export default function Dashboard(props: DashboardProps) {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: "none" } }}
           ></IconButton>
-          <Typography
-            style={{
-              color: "gray",
-              marginRight: "5px",
-              marginLeft: "10px",
-              position: "absolute",
-              cursor: "pointer",
-            }}
-            sx={{ display: { xs: "none", sm: "block" } }}
-          >
-            <LayersIcon />
-          </Typography>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            style={{
-              fontSize: "0.9rem",
-              color: "black",
-              cursor: "pointer",
-              marginLeft: "44px",
-            }}
-          >
-            No Namespaces
-          </Typography>
-          <Typography
-            style={{ marginLeft: "80px" }}
-            sx={{ display: { sm: "none" } }}
-          >
+          <Button style={{ background: "none" }}>
             <Typography
               style={{
                 color: "gray",
-                marginRight: "3px",
-                marginTop: "-2px",
-                marginLeft: "38px",
+                marginRight: "5px",
+                marginLeft: "-113px",
                 position: "absolute",
                 cursor: "pointer",
               }}
+              sx={{ display: { xs: "none", sm: "block" } }}
             >
               <LayersIcon />
             </Typography>
@@ -226,25 +226,57 @@ export default function Dashboard(props: DashboardProps) {
               noWrap
               component="div"
               style={{
-                fontSize: "0.8rem",
+                fontSize: "0.9rem",
                 color: "black",
                 cursor: "pointer",
-                marginLeft: "69px",
+                marginLeft: "44px",
+                textTransform: "capitalize",
               }}
             >
               No Namespaces
             </Typography>
-          </Typography>
-          <Typography
-            style={{
-              color: "gray",
-              marginLeft: "-1px",
-              marginTop: "3px",
-              cursor: "pointer",
-            }}
-          >
-            <ArrowDropDownIcon />
-          </Typography>
+            <Typography
+              style={{ marginLeft: "360px" }}
+              sx={{ display: { sm: "none" } }}
+            >
+              <Typography
+                style={{
+                  color: "gray",
+                  marginRight: "3px",
+                  marginTop: "-2px",
+                  marginLeft: "38px",
+                  position: "absolute",
+                  cursor: "pointer",
+                }}
+              >
+                <LayersIcon />
+              </Typography>
+              <Typography
+                variant="h6"
+                noWrap
+                component="div"
+                style={{
+                  fontSize: "0.8rem",
+                  color: "black",
+                  cursor: "pointer",
+                  marginLeft: "69px",
+                  textTransform: "capitalize",
+                }}
+              >
+                No Namespaces
+              </Typography>
+            </Typography>
+            <Typography
+              style={{
+                color: "gray",
+                marginLeft: "-1px",
+                marginTop: "3px",
+                cursor: "pointer",
+              }}
+            >
+              <ArrowDropDownIcon />
+            </Typography>
+          </Button>
           <Typography
             style={{ color: "black", marginLeft: "850px", cursor: "pointer" }}
           >
