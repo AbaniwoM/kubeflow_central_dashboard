@@ -17,13 +17,12 @@ import Stack from "@mui/material/Stack";
 import LogoutIcon from "@mui/icons-material/Logout";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Typography, Link } from "@material-ui/core";
-import { useNavigate } from "react-router-dom";
+
 
 
 export const Hamburger = () => {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef<HTMLButtonElement>(null);
-  const navigate = useNavigate();
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
@@ -115,7 +114,7 @@ export const Hamburger = () => {
                     <div
                       style={{ backgroundColor: "#213d7a", height: "100vh" }}
                     >
-                      <Button onClick={() => navigate("/dashboard/")}>
+                      <Button>
                         <List>
                           {["Home"].map((text, index) => (
                             <ListItem key={text} disablePadding>
