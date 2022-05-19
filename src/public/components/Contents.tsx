@@ -7,7 +7,7 @@ export interface IContentsProps {
 }
 
 export function Contents (props: IContentsProps) {
-  const url = "https://kubetask.free.beeceptor.com/";
+  const url = "https://kubewin.free.beeceptor.com/";
   const [content, setContent] = useState({
     loading: false,
     data: null,
