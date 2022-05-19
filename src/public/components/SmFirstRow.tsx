@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { Typography } from "@material-ui/core";
+import { Contents } from "./Contents";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -25,7 +26,7 @@ export default function SmFirstRow() {
           style={{
             backgroundColor: "white",
             borderRadius: "4px",
-            height: "5vh",
+            height: "25vh",
             width: "107%",
             padding: "23px",
             marginTop: "20px",
@@ -52,6 +53,17 @@ export default function SmFirstRow() {
               marginTop: "18px",
             }}
           ></Typography>
+          <Typography
+            style={{
+              width: "110%",
+              fontSize: "0.9rem",
+              marginLeft: "-13px",
+              marginTop: "8px",
+              height: "55px",
+            }}
+          >
+            <Contents />
+          </Typography>
         </Item>
       </Grid>
       <Grid item xs={2} sm={4} md={3}>
@@ -59,7 +71,7 @@ export default function SmFirstRow() {
           style={{
             backgroundColor: "white",
             borderRadius: "4px",
-            height: "10vh",
+            height: "27vh",
             width: "73%",
             padding: "23px",
             marginLeft: "45px",
@@ -96,6 +108,17 @@ export default function SmFirstRow() {
           >
             <i>Choose a namespace to see Notebooks</i>
           </Typography>
+          <Typography
+            style={{
+              width: "110%",
+              fontSize: "0.9rem",
+              marginLeft: "-13px",
+              marginTop: "8px",
+              height: "55px",
+            }}
+          >
+            <Contents />
+          </Typography>
         </Item>
       </Grid>
       <Grid item xs={2} sm={4} md={3}>
@@ -103,7 +126,7 @@ export default function SmFirstRow() {
           style={{
             backgroundColor: "white",
             borderRadius: "4px",
-            height: "5vh",
+            height: "25vh",
             width: "73%",
             padding: "23px",
             marginLeft: "45px",
@@ -129,6 +152,17 @@ export default function SmFirstRow() {
               marginTop: "18px",
             }}
           ></Typography>
+          <Typography
+            style={{
+              width: "110%",
+              fontSize: "0.9rem",
+              marginLeft: "-13px",
+              marginTop: "8px",
+              height: "55px",
+            }}
+          >
+            <Contents />
+          </Typography>
         </Item>
       </Grid>
     </Grid>

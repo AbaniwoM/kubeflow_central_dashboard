@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { Typography, makeStyles } from "@material-ui/core";
+import { Contents } from "./Contents";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -101,7 +102,7 @@ export default function FirstRow() {
           style={{
             backgroundColor: "white",
             borderRadius: "4px",
-            height: "5vh",
+            height: "19vh",
             width: "75%",
             padding: "23px",
             marginLeft: "2px",
@@ -128,6 +129,17 @@ export default function FirstRow() {
               marginTop: "18px",
             }}
           ></Typography>
+          <Typography
+            style={{
+              width: "112%",
+              fontSize: "0.9rem",
+              marginLeft: "-13px",
+              marginTop: "8px",
+              height: "62px",
+            }}
+          >
+            <Contents />
+          </Typography>
         </Item>
       </Grid>
       <Grid item xs={2} sm={4} md={3}>
@@ -135,7 +147,7 @@ export default function FirstRow() {
           style={{
             backgroundColor: "white",
             borderRadius: "4px",
-            height: "10vh",
+            height: "21vh",
             width: "81%",
             padding: "23px",
             marginLeft: "-58px",
@@ -163,8 +175,27 @@ export default function FirstRow() {
               marginTop: "18px",
             }}
           ></Typography>
-          <Typography style={{ color: "#999999", width: "100%", fontSize: "0.9rem", marginTop: "5px", marginLeft: "-15px" }}>
+          <Typography
+            style={{
+              color: "#999999",
+              width: "100%",
+              fontSize: "0.9rem",
+              marginTop: "5px",
+              marginLeft: "-15px",
+            }}
+          >
             <i>Choose a namespace to see Notebooks</i>
+          </Typography>
+          <Typography
+            style={{
+              width: "110%",
+              fontSize: "0.9rem",
+              marginLeft: "-13px",
+              marginTop: "8px",
+              height: "55px",
+            }}
+          >
+            <Contents />
           </Typography>
         </Item>
       </Grid>
@@ -173,7 +204,7 @@ export default function FirstRow() {
           style={{
             backgroundColor: "white",
             borderRadius: "4px",
-            height: "5vh",
+            height: "17vh",
             width: "78%",
             padding: "23px",
             marginLeft: "-98px",
@@ -201,6 +232,17 @@ export default function FirstRow() {
               marginTop: "18px",
             }}
           ></Typography>
+          <Typography
+            style={{
+              width: "110%",
+              fontSize: "0.9rem",
+              marginLeft: "-13px",
+              marginTop: "8px",
+              height: "55px",
+            }}
+          >
+            <Contents />
+          </Typography>
         </Item>
       </Grid>
     </Grid>
